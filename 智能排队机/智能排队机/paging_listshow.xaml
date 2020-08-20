@@ -1,0 +1,23 @@
+﻿<Window x:Class="智能排队机.paging_listshow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:智能排队机"
+        mc:Ignorable="d"
+        Title="paging_listshow" Height="450" Width="800">
+    <Grid Loaded="paging_listshow_Loaded">
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="264" Margin="114,30,0,0" VerticalAlignment="Top" Width="542"/>
+        
+        <Label x:Name="label1" Content="当前页：" HorizontalAlignment="Left" Margin="42,332,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LblCurrentPage" Content="Label" HorizontalAlignment="Left" Margin="100,332,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="共计条数：" HorizontalAlignment="Left" Margin="179,332,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LblTotalPage" Content="Label" HorizontalAlignment="Left" Margin="254,333,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="FirstPagBtn" Content="首页" HorizontalAlignment="Left" Margin="324,336,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.371,0.587" Click="FirstPagBtn_Click"/>
+        <Button x:Name="UpPagBtn" Content="上一页" HorizontalAlignment="Left" Margin="439,336,0,0" VerticalAlignment="Top" Width="75" Click="UpPagBtn_Click"/>
+        <Button x:Name="NextPagBtn" Content="下一页" HorizontalAlignment="Left" Margin="543,336,0,0" VerticalAlignment="Top" Width="75" Click="NextPagBtn_Click"/>
+        <Button x:Name="LastPagBtn" Content="尾页" HorizontalAlignment="Left" Margin="645,336,0,0" VerticalAlignment="Top" Width="75" Click="LastPagBtn_Click"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="智能排队机.Slider"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:智能排队机"
+        mc:Ignorable="d"
+        Title="Slider" Height="450" Width="800">
+    <Grid>
+        <Slider x:Name="slider1" HorizontalAlignment="Left" Height="27" Margin="288,262,0,0" VerticalAlignment="Top" Width="285" ValueChanged="slider1_ValueChanged" Maximum="50" LargeChange="5"/>
+        <Slider x:Name="slider2" HorizontalAlignment="Left" Height="27" Margin="288,304,0,0" VerticalAlignment="Top" Width="285" ValueChanged="slider2_ValueChanged" Maximum="50" LargeChange="5"/>
+        <Label x:Name="label" Content="舵机" HorizontalAlignment="Left" Margin="344,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.595,1.078"/>
+        <Label x:Name="label1" Content="当前水平角度：" HorizontalAlignment="Left" Margin="254,141,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="当前垂直角度：" HorizontalAlignment="Left" Margin="254,191,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="353,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.642,0.53"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="353,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label3" Content="水平" HorizontalAlignment="Left" Margin="216,262,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="垂直" HorizontalAlignment="Left" Margin="216,304,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="返回菜单" HorizontalAlignment="Left" Margin="27,25,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+
+    </Grid>
+</Window>
